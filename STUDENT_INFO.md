@@ -8,8 +8,6 @@
 |**Department**|Computer Science and Engineering|
 |**Laboratory**|Intelligent Computing Lab (IC Lab)|
 |**Advisor**|Dr. Qazi Mazhar Ul Haq|
-|**Semester**|Spring 2026 (1142)|
-|**Course**|CS556 Research Project|
 
 ## Project
 
