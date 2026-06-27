@@ -2,7 +2,7 @@
 
 **Yuan Ze University — Intelligent Computing Lab (IC Lab)**
 
-> Muhammad Waqar Afridi (Student ID: 1146154)  
+> Muhammad Waqar   
 > Advisor: Dr. Qazi Mazhar Ul Haq  
 > Spring Semester 2026
 
