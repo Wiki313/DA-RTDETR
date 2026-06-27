@@ -1,0 +1,17 @@
+__include__: [
+  '../dataset/city2foggy_custom.yml',
+  '../runtime.yml',
+  './include/dataloader.yml',
+  './include/optimizer_city.yml',
+  './include/r50_p2_i1.yml',
+]
+output_dir: ./output/rtdetr_x_city2foggy
+
+PResNet:
+  depth: 101
+  variant: d
+  freeze_at: 0
+  return_idx: [1, 2, 3]
+  num_stages: 4
+  freeze_norm: True
+  pretrained: True

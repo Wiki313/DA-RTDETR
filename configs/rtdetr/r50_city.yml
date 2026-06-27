@@ -1,0 +1,10 @@
+__include__: [
+  '../dataset/city2foggy.yml',
+  '../runtime.yml',
+  './include/dataloader.yml',
+  './include/optimizer_city.yml',
+  './include/r50_p2_i1.yml',
+]
+
+output_dir:
+

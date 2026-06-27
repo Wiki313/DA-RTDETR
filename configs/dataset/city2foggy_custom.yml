@@ -1,0 +1,45 @@
+task: detection
+num_classes: 9
+remap_mscoco_category: False
+
+train_dataloader_source:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: C:/confmix_data/real_yolo/cityscapes/train/images
+    ann_file: C:/confmix_data/coco_json/cityscapes_train.json
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: True
+  batch_size: 4
+  num_workers: 4
+  drop_last: True
+
+train_dataloader_target:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: C:/confmix_data/real_yolo/foggy/train/images
+    ann_file: C:/confmix_data/coco_json/foggy_train.json
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: True
+  batch_size: 4
+  num_workers: 4
+  drop_last: True
+
+val_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: C:/confmix_data/real_yolo/foggy/val/images
+    ann_file: C:/confmix_data/coco_json/foggy_val.json
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: False
+  batch_size: 1
+  num_workers: 4
+  drop_last: False

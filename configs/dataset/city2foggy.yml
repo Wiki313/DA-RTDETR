@@ -1,0 +1,49 @@
+task: detection
+
+num_classes: 8
+remap_mscoco_category: True
+
+train_dataloader_source:
+  type: DataLoader
+  dataset: 
+    type: CocoDetection
+    img_folder: 
+    ann_file: 
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: True
+  batch_size: 4
+  num_workers: 8
+  drop_last: True 
+
+train_dataloader_target:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: 
+    ann_file: 
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: True
+  batch_size: 4
+  num_workers: 8
+  drop_last: True
+
+
+
+val_dataloader:
+  type: DataLoader
+  dataset: 
+    type: CocoDetection
+    img_folder: 
+    ann_file: 
+    transforms:
+      type: Compose
+      ops: ~ 
+
+  shuffle: False
+  batch_size: 1
+  num_workers: 8
+  drop_last: False
